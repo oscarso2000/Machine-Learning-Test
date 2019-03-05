@@ -333,7 +333,7 @@ if __name__ == '__main__':
     else:
         bHeader = True
         # the bigger example
-        dcHeadings, trainingData = loadCSV('fishiris.csv') # demo data from matlab
+        dcHeadings, trainingData = loadCSV('iris.csv') # demo data from matlab
         decisionTree = growDecisionTreeFrom(trainingData, evaluationFunction=gini)
         prune(decisionTree, 0.8, notify=True) # notify, when a branch is pruned (one time in this example)
         result = plot(decisionTree)
